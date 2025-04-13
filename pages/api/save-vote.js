@@ -1,6 +1,6 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
-const MONGODB_URI = 'mongodb://svriitkgp:YRzC61aTYX5nJK7j@ac-f7ewbkp-shard-00-00.vsp2bvv.mongodb.net:27017,ac-f7ewbkp-shard-00-01.vsp2bvv.mongodb.net:27017,ac-f7ewbkp-shard-00-02.vsp2bvv.mongodb.net:27017/?replicaSet=atlas-cyik5q-shard-0&ssl=true&authSource=admin&retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI; // Use environment variable
 const DB_NAME = 'Blok';
 const COLLECTION_NAME = 'votes';
 
@@ -8,6 +8,10 @@ let cachedClient = null;
 let cachedDb = null;
 
 async function connectToDatabase() {
+  if (!MONGODB_URI) {
+    throw new Error('Please define the MONGODB_URI environment variable');
+  }
+
   if (cachedClient && cachedDb) {
     return { client: cachedClient, db: cachedDb };
   }
