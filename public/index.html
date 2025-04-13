@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Scroll - Blok</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="fluid">We Are<br />Blok.</h1>
+  </header>
+  <main>
+    <section class="content fluid">
+      <h2><span aria-hidden="true">you can&nbsp;</span>
+        <span class="sr-only">you can ship things.</span>
+      </h2>
+      <ul aria-hidden="true" style="--count: 10">
+        <li style="--i: 0">design.</li>
+        <li style="--i: 1">prototype.</li>
+        <li style="--i: 2">innovate.</li>
+        <li style="--i: 3">build.</li>
+        <li style="--i: 4">transform.</li>
+        <li style="--i: 5">create.</li>
+        <li style="--i: 6">customize.</li>
+        <li style="--i: 7">optimize.</li>
+        <li style="--i: 8">scale.</li>
+        <li style="--i: 9">do it.</li>
+      </ul>
+      
+    </section>
+    <section>
+      <video class="fluid" autoplay loop muted playsinline>
+        <source src="images/Modular Phone - Customizable .mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section class="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            We are a team of passionate IITians dedicated to revolutionizing the way technology integrates into your life. Our modular phone is designed to empower you with unparalleled customization, sustainability, and innovation. Join us in shaping the future of technology.
+          </p>
+          <p>
+            Show your interest by voting below, and we will get back to you as soon as the product is ready!
+          </p>
+          <div class="feedback">
+            <button type="button" class="thumb" id="thumbsUp">👍</button>
+            <span id="thumbsUpCount">0</span>
+            <button type="button" class="thumb" id="thumbsDown">👎</button>
+            <span id="thumbsDownCount">0</span>
+          </div>
+        </div>
+        <div class="about-action">
+        </div>
+      </div>
+    </section>
+  </main>
+  <a class="logo" href="/" aria-label="Logo">
+    <img src="images/blok -black image.png" alt="Logo">
+  </a>
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>

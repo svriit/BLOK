@@ -1,0 +1,20 @@
+{
+  "name": "blok",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000B\u0000L\u0000O\u0000K\u0000\r\u0000 \u0000",
+  "main": "main.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.15.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
